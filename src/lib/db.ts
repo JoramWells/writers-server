@@ -2,7 +2,7 @@ import {Sequelize}  from 'sequelize'
 
 // setting up sequelize
 
-const DB = 'huruma2';
+const DB = 'writers';
 const USERNAME = 'postgres';
 const PASSWORD = 'postgres';
 
@@ -15,7 +15,6 @@ const db = new Sequelize(
     dialect: 'postgres',
     logging: false,
     define: {
-      timestamps: false,
       freezeTableName: true,
 
     },

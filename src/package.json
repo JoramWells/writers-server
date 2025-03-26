@@ -13,7 +13,9 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
+    "pg": "^8.14.1",
     "sequelize": "^6.37.6"
   },
   "devDependencies": {
