@@ -1,4 +1,4 @@
-export * from './types/accounts'
+export * from './types/order'
 export * from './types/appointments'
 export * from './types/app-modules'
 export * from './types/consultation'

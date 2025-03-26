@@ -1,21 +1,16 @@
-import { UserInterface, UserTypeInterface } from "motherangela";
+import { OrderInterface } from "x-writers";
 import { Model, DataTypes, UUIDV4 } from "sequelize";
 import { db } from "../lib/db";
 
-export class Order extends Model<UserInterface> implements UserInterface{
-  id_no!: string;
-  user_id!: string;
-  user_type_id!: string;
-  user_type?: UserTypeInterface | undefined;
-  full_name!: string;
-  user_name!: string;
-  email!: string;
-  password!: string;
-  status!: string;
-  hospital_id!: string;
-  navigation_style!: string;
-  consultation_income_percentage!: string;
-  procedure_income_percentage!: string;
+export class Order extends Model<OrderInterface> implements OrderInterface{
+  id!: string;
+  topic!: string;
+  description!: string;
+  dateAssigned!: Date;
+  submissionTime!: Date;
+  complexity!: string;
+  assignStatus!: string;
+
 }
 
 Order.init({
